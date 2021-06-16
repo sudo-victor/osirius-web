@@ -1,0 +1,53 @@
+// $white: #ffffff;
+// $blue: #0066FF;
+// $blueLight: #54ACD1;
+// $blueDark: #213A72;
+// $grayDark: #595959;
+// $gray: #A5A5A5;
+// $grayLight: #E3E3E3;
+
+:root {
+    --white: #ffffff;
+    --blue: #0066FF;
+    --blueLight: #54ACD1;
+    --blueDark: #213A72;
+    --grayDark: #595959;
+    --gray: #A5A5A5;
+    --grayLight: #E3E3E3;
+    --padding: 35px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.link {
+    color: var(--blueLight);
+    cursor: pointer;
+    text-decoration-line: underline;
+    transition: text-decoration-line ease 200ms;
+
+    &:hover {
+        text-decoration-line: none;
+    }
+}
+
+.login-title {
+    margin-bottom: 30px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: var(--blueDark);
+}
+
+.login-container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}

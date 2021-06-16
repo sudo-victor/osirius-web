@@ -1,0 +1,25 @@
+
+<div class="login-container">
+
+    <app-description></app-description>
+
+    <section class="entrar-container">
+        <main>
+            <h2 class="login-title">Entrar</h2>
+
+        <form #loginForm="ngForm">
+            <input [(ngModel)]="account.email" required class="form-control input" type="email" placeholder="E-mail" name="email"/>
+            <input [(ngModel)]="account.password" required class="form-control input" type="password" placeholder="Senha" name="password"/>
+
+            <a routerLink="/forgot-password" class="link">Esqueci a senha</a>
+
+            <button [disabled]="loginForm.invalid" class="btn btn-primary"(click)="handleSubmit()">
+                Entrar
+            </button>
+
+            <span>Não tem uma conta? <a routerLink="/signup" class="link">criar conta</a></span>
+        </form>
+    </main>
+    </section>
+    
+</div>

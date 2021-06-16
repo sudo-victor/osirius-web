@@ -1,0 +1,25 @@
+<div class="login-container">
+
+    <app-description></app-description>
+
+    <section class="esqueceu-senha-container">
+        <main>
+            <h2 class="login-title">Esqueceu a senha</h2>
+
+            <span>
+                Nós enviaremos um email para você redefinir sua senha.
+            </span>
+
+        <form #loginForm="ngForm">
+            <input [(ngModel)]="email" required class="form-control input" type="email" placeholder="E-mail" name="email"/>
+
+            <button [disabled]="loginForm.invalid" class="btn btn-primary"(click)="handleSubmit()">
+                Enviar email
+            </button>
+
+            <span>Lembra da sua senha? <a routerLink="/login" class="link">entrar</a></span>
+        </form>
+    </main>
+    </section>
+    
+</div>

@@ -1,0 +1,29 @@
+
+    .description-container {
+        position: relative;
+        height: 100%;
+
+        padding: var(--padding);
+
+        background-color: var(--blue);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            position: absolute;
+            top: 35px;
+            left: 35px;
+        }
+
+        p {
+            max-width: 300px;
+            
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 78px;
+            color: var(--white);
+            text-align: left;
+        }
+    }
