@@ -3,7 +3,7 @@ import { RouterModule } from "@angular/router";
 
 import { CriarContaComponent } from "./criar-conta/criar-conta.component";
 import { EntrarComponent } from "./entrar/entrar.component";
-import { EsqueceuSenhaComponent } from "./esqueceu-senha/esqueceu-senha";
+import { EsqueceuSenhaComponent } from "./esqueceu-senha/esqueceu-senha.component";
 
 const routes = [
     {

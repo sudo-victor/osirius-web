@@ -1,0 +1,21 @@
+<div class="login-container">
+
+    <app-description></app-description>
+
+    <section class="email-enviado-container">
+        <main>
+            <h2 class="login-title">Esqueceu a senha</h2>
+
+            <span>
+                Um email foi enviado para: {{ email }}
+            </span>
+
+            <button routerLink="/esqueceu-senha" class="btn btn-primary"(click)="handleGoBack()">
+                Tentar novamente
+            </button>
+            
+            <span>Lembra da sua senha? <a routerLink="/login" class="link">entrar</a></span>
+    </main>
+    </section>
+    
+</div>
